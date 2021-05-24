@@ -1,6 +1,6 @@
 START
 Num1=0
-DO WHILE(Num1<1 or 1>5)
+DO WHILE(Num1 < 1 or Num1 > 5)
 Prompt"press 1 to use Point Of sale"
 Prompt"press 2 to access Human Resource Records"
 Prompt"press 3 to use Decision Support System"
@@ -8,11 +8,11 @@ Prompt"press 4 to update inventory"
 Prompt "press 5 to access customer details"
 Get num1
 Case of(num1){
-1:POS()
-2:HR()
-3:DSS()
-4: Inventory ()
-5: Customer()
+1:PointOfSale()
+2:Inventory() 
+3: HumanRecource() 
+4: Customer() 
+5: ManagerView() 
 Default: "invalid entry please re-enter"
 End case
 }
